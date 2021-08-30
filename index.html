@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Audio App</title>
+    <link rel="shortcut icon" href="audio-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="bodyImg">
+    <div id="welcome" onclick="animateOut()">
+        <h1 class="text-1">Welcome</h1>
+        <img id="loading" style="margin-left: 4px;" src="loading.gif" height="25px" alt="">
+        <h3 class="text-2">Get your music started! -> (Click)</h3>
+    </div>
+    <div id="root">
+        <a href="form/index.html">
+            <div class="btn-2">Click Here!</div>
+        </a>
+        <h1 class="h1">Got any song recommendations?</h1>
+        <div class="btn-div">
+            <div class="btn" onclick="playPrevious()">Play Previous</div>
+            <div class="btn" onclick="playNext()">Play Next</div>
+        </div>
+        <audio autoplay id="audio" src="audio/Mission Impossible - Main Theme (Piano Version).mp3" controls onended="myFunction()"></audio>
+        <div class="img-div">
+            <img id="songImg" src="images/Mission-impossible.png">
+            <h1 id="songName">Mission Impossible - Main Theme (Piano Version)</h1>
+        </div>
+    </div>
+    <script src="list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
